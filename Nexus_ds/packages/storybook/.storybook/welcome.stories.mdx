@@ -1,0 +1,59 @@
+import {Meta, Story} from "@storybook/addon-docs";
+import {link, button} from "@nexus-ds/theme";
+
+<Meta title="Welcome" />
+
+<br />
+
+# Welcome 👋🏼
+
+<br />
+
+## Nexus Design System
+
+<br />
+
+<p className="!text-base !text-foreground max-w-xl [&>p]:text-foreground [&>p]:text-base">
+  Here you can find the guidelines, components APIs and examples to help you build your next project
+  with Nexus Design System.
+</p>
+
+<div className="flex flex-col gap-8">
+  <div className="flex flex-row justify-start items-center mt-8 gap-4">
+    <a
+      href="https://github.com/NexusDesignSystem/nexus-ds"
+      target="_blank"
+      className={button({
+        color: "default",
+        variant: "bordered",
+        className: "[&>p]:text-foreground gap-1 [&>svg]:fill-none",
+      })}
+    >
+      Github
+      <svg
+        aria-hidden="true"
+        className="flex stroke-current self-center"
+        fill="none"
+        height="1em"
+        shapeRendering="geometricPrecision"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+        viewBox="0 0 24 24"
+        width="1em"
+      >
+        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+        <path d="M15 3h6v6" />
+        <path d="M10 14L21 3" />
+      </svg>
+    </a>
+  </div>
+</div>
+
+<br />
+
+
+<div class="block text-xs [&>p]:text-default-400">
+  Last updated on <time datetime="2023-30-09">Nov 5, 2023</time>
+</div>
